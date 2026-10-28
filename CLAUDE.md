@@ -14,3 +14,17 @@ A plugin marketplace of skills for Claude Code. Each skill is `skills/<name>/` w
 ## Commits
 
 Conventional Commits, `type(scope): summary`, 72 characters or fewer; the scope is the skill name (`feat(ci): …`).
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues on `dworznik/skills`, through the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+The five default labels: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `GLOSSARY.md` and `docs/adr/` at the repo root, created when first needed. See `docs/agents/domain.md`.
