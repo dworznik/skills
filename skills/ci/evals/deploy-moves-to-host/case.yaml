@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: deploy-moves-to-host
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  The answer names Cloudflare Workers Builds (the git integration) as the replacement, lists the
+  owner's dashboard steps (connect the repo, production branch, build and deploy commands, build
+  variables, runtime secrets set once), and reduces the workflow to one checks job on pull_request.
+  It says which repository secrets and Actions environments become unnecessary, flags fork PRs as
+  something to check, and records the decision in docs/agents/ci.md.

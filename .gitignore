@@ -1,0 +1,4 @@
+*-workspace/
+skills/*/evals/results/
+.DS_Store
+.local/

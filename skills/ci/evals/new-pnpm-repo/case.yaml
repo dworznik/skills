@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: new-pnpm-repo
+expected_outcome: |
+  One workflow with exactly one job that runs pnpm verify on pull_request only, with concurrency
+  cancel-in-progress and a timeout, and a docs/agents/ci.md recording the decisions, including that
+  no ruleset exists and nothing enforces the check. The answer also considers "no CI" since hooks
+  already run format and lint, and states the expected billed minutes per run.

@@ -1,0 +1,20 @@
+{
+  "name": "dworznik",
+  "owner": {
+    "name": "Patryk Dwórznik",
+    "email": "patryk@dworznik.com"
+  },
+  "metadata": {
+    "description": "Patryk's skills for Claude Code",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "ci",
+      "description": "Configure, review or trim GitHub Actions CI for a repo: one job on pull requests, deploys from the host, decisions recorded in docs/agents/ci.md, cost measured with the billing API",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/ci"]
+    }
+  ]
+}

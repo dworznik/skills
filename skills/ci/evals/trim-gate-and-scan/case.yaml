@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: trim-gate-and-scan
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  The workflow ends up with one job on pull_request only; the ci-ok gate and the gitleaks job are
+  gone, with gitleaks moved to a pre-commit hook or dropped with a reason. The answer says the ruleset
+  must require the single job's name (or that the job is named ci-ok so the ruleset stays), and
+  recommends strict status checks now that the push run is gone. Decisions land in docs/agents/ci.md
+  and the answer gives billed minutes before and after (3 billed minutes per run to 1 or 2).
